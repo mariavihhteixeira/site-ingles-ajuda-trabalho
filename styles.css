@@ -1,0 +1,93 @@
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos comuns do rodapé */
+.footer {
+    width: 100%;
+    height: 110.3px;
+    background-color: #F1B9DB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-left img {
+    width: 133px;
+    height: 82px;
+}
+
+.footer-center h1 {
+    color: #FF6EC6;
+    font-size: 32px;
+}
+
+.footer-right a {
+    color: #FF6EC6;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+/* Estilo das seções */
+section {
+    display: none;
+    padding: 20px;
+}
+
+/* Exibe a seção ativa */
+section.active {
+    display: block;
+}
+
+/* Títulos */
+h2, .assunto-title {
+    text-align: center;
+    color: #FF6EC6;
+    font-size: 36px;
+    margin-top: 40px;
+}
+
+/* Seção de conteúdo principal */
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.left-image img {
+    width: 300px;
+}
+
+.right-text p {
+    color: black;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Caixas de contato */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contact-box {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+}
