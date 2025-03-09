@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Master</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Esconde as seções, exceto a ativa */
+        section {
+            display: none;
+        }
+        /* Exibe a seção ativa */
+        section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegação -->
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="imagem_logo.png" alt="Logo" width="133" height="82">
+        </div>
+        <div class="footer-center">
+            <h1>English Master</h1>
+        </div>
+        <div class="footer-right">
+            <a href="#home" class="nav-link">HOME</a>
+            <a href="#assunto" class="nav-link">ASSUNTO</a>
+            <a href="#info" class="nav-link">INFO</a>
+        </div>
+    </footer>
+
+    <!-- Página HOME -->
+    <section id="home" class="home active" style="background-color: #EB86A6;">
+        <h2>PRESENT CONTINUOUS</h2>
+        <div class="content-section">
+            <div class="left-image">
+                <img src="imagem1.jpg" alt="Imagem 1" width="300">
+            </div>
+            <div class="right-text">
+                <p>O present continuous é um tempo verbal utilizado na língua inglesa quando desejamos expressar uma ideia do que está ocorrendo no momento de fala.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="left-image">
+                <img src="imagem2.jpg" alt="Imagem 2" width="300">
+            </div>
+            <div class="right-text">
+                <p>Ele é formado pelos verbos auxiliares To Be (am, is, are) e no principal a forma -ing. Muitas pessoas podem ter dificuldade nesse conteúdo, por isso nosso site te ajuda a encontrar maneiras de aprender de forma mais fácil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Página ASSUNTO -->
+    <section id="assunto" class="assunto">
+        <h2 class="assunto-title">Formas de Resolver</h2>
+
+        <div class="content-section">
+            <div class="left-image">
+                <img src="imagem3.jpg" alt="Imagem 1" width="300">
+            </div>
+            <div class="right-text">
+                <p>Ter diálogos é uma ótima forma de praticar seu speaking.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="left-image">
+                <img src="imagem4.jpg" alt="Imagem 2" width="300">
+            </div>
+            <div class="right-text">
+                <p>Assistir filmes legendados e ouvir músicas em inglês pode te ajudar no listening.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="left-image">
+                <img src="imagem5.jpg" alt="Imagem 3" width="300">
+            </div>
+            <div class="right-text">
+                <p>Ler livros e artigos em inglês pode ser útil para o seu reading.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Página INFO -->
+    <section id="info" class="info">
+        <!-- Caixa de texto -->
+        <section class="contact-info">
+            <div class="contact-box" style="background-color: #FF9DDB;">
+                <p>Nosso email para contato</p>
+            </div>
+            <div class="contact-box" style="background-color: #FF9DDB;">
+                <p>Englishmaster.com.br</p>
+            </div>
+            <div class="contact-box" style="background-color: #FF9DDB;">
+                <p>Número para contato: 03032889</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- Rodapé Inferior (Apenas um rodapé) -->
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="imagem_logo.png" alt="Logo" width="133" height="82">
+        </div>
+    </footer>
+
+    <script>
+        // Função para alternar entre as seções ativas
+        const links = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+        
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Remove a classe 'active' de todas as seções
+                sections.forEach(section => section.classList.remove('active'));
+
+                // Adiciona a classe 'active' à seção correspondente
+                const targetSection = document.querySelector(link.getAttribute('href'));
+                targetSection.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
