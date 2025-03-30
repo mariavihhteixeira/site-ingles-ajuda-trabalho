@@ -91,3 +91,28 @@ h2, .assunto-title {
     color: black;
     font-size: 18px;
 }
+/* Estilo para a página INFO */
+#info {
+    min-height: 100vh; /* Garante que a altura da página INFO seja ao menos a altura total da janela */
+    width: 100%; /* Garante que a largura seja 100% */
+    padding: 20px; /* Adiciona um pequeno espaçamento dentro da página */
+    background-color: #EB86A6; /* Coloca a mesma cor de fundo das outras páginas */
+}
+
+/* Contêiner de contato (manter a consistência do layout) */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-box {
+    width: 80%; /* Ajusta a largura das caixas de contato */
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    background-color: #FF9DDB;
+}
